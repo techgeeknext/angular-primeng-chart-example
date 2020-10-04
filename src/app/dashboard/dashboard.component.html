@@ -1,0 +1,72 @@
+<p>
+    <mat-toolbar>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+        <span>Angular PrimeNg Charts ( Application Usage Dashboard )</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+     <mat-icon>share</mat-icon>
+   </button>
+    </mat-toolbar>
+</p>
+
+<mat-grid-list cols="3" rowHeight="1:1">
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title>Line Chart </mat-card-title>
+                <mat-card-subtitle>Line Graph" is a graph that shows information that is connected in some way (such as change over time).</mat-card-subtitle>
+            </mat-card-header>
+            <p-chart type="line" [data]="userUsageHoursData" [options]="options"></p-chart>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title>Bar Chart </mat-card-title>
+                <mat-card-subtitle>"Bar Graph " (also called Bar Chart) is a graphical display of data using bars of different heights.</mat-card-subtitle>
+            </mat-card-header>
+            <p-chart type="bar" [data]="userUsageHoursData" [options]="options"></p-chart>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title>Pie Chart </mat-card-title>
+                <mat-card-subtitle>"Pie Chart" is a chart to show data as Pie slices. Suppose we want to survey employees work for which organizations.</mat-card-subtitle>
+            </mat-card-header>
+            <p-chart type="pie" [data]="userAppData" [options]="options"></p-chart>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title>Donut Chart </mat-card-title>
+                <mat-card-subtitle>Application Usage Chart : Donut Chart is a variation on a Pie chart. In Donat chart there is a hole in the center.</mat-card-subtitle>
+            </mat-card-header>
+            <p-chart type="doughnut" [data]="userAppData" [options]="options"></p-chart>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title>PolarArea Chart </mat-card-title>
+                <mat-card-subtitle>"Polar area" charts are similar to pie charts, but each segment has the same angle - the radius of the segment differs depending on the value. </mat-card-subtitle>
+            </mat-card-header>
+            <p-chart type="polarArea" [data]="userAppData" [options]="options"></p-chart>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title>Radar Chart</mat-card-title>
+                <mat-card-subtitle>Radar Chart" also called as Spider Chart, Radial Chart or Web Chart, is a graphical method of displaying multivariate data.</mat-card-subtitle>
+            </mat-card-header>
+            <p-chart type="radar" [data]="userUsageHoursData" [options]="options"></p-chart>
+        </mat-card>
+    </mat-grid-tile>
+
+</mat-grid-list>
